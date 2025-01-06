@@ -1,0 +1,23 @@
+.left-centre-right {
+	display: flex;
+	gap: 1rem;
+	justify-content: space-between;
+
+	&>* {
+		display: flex;
+		justify-content: center;
+
+		&:first-child,
+		&:last-child {
+			flex: 1;
+		}
+
+		&:first-child {
+			justify-content: left;
+		}
+
+		&:last-child {
+			justify-content: right;
+		}
+	}
+}
